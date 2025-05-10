@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DI-AUDIO | Diego Oliveira - Produtor Musical</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header/Navigation -->
+    <header class="fixed w-full bg-gray-900 bg-opacity-90 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <i class="fas fa-headphones text-indigo-500 text-2xl mr-2"></i>
+                    <a href="#" class="text-2xl font-bold text-white">
+                        <span class="text-indigo-500">DI</span>-AUDIO <span class="text-indigo-500">STUDIO</span>
+                    </a>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="text-white hover:text-indigo-400 transition">Home</a>
+                    <a href="#about" class="text-white hover:text-indigo-400 transition">Sobre</a>
+                    <a href="#portfolio" class="text-white hover:text-indigo-400 transition">Portfólio</a>
+                    <a href="#gallery" class="text-white hover:text-indigo-400 transition">Galeria</a>
+                    <a href="#contact" class="text-white hover:text-indigo-400 transition">Contato</a>
+                </nav>
+                
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2 text-white hover:text-indigo-400 transition">Home</a>
+                <a href="#about" class="block py-2 text-white hover:text-indigo-400 transition">Sobre</a>
+                <a href="#portfolio" class="block py-2 text-white hover:text-indigo-400 transition">Portfólio</a>
+                <a href="#gallery" class="block py-2 text-white hover:text-indigo-400 transition">Galeria</a>
+                <a href="#contact" class="block py-2 text-white hover:text-indigo-400 transition">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero min-h-screen flex items-center justify-center pt-20">
+        <div class="container mx-auto px-6 text-center animate-fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                <span class="text-indigo-500">Diego Oliveira</span><br>
+                Produtor Musical
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+                Transformando ideias em experiências sonoras memoráveis com qualidade profissional.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#portfolio" class="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105">
+                    Ver Portfólio
+                </a>
+                <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105">
+                    Contato
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Sobre <span class="text-indigo-500">DI-AUDIO</span></h2>
+                <div class="w-20 h-1 bg-indigo-500 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 animate-fade-in delay-100">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Diego Oliveira no estúdio" 
+                         class="rounded-lg shadow-xl w-full h-auto max-h-96 object-cover">
+                </div>
+                
+                <div class="lg:w-1/2 animate-fade-in delay-200">
+                    <h3 class="text-2xl font-bold mb-4">Diego Oliveira</h3>
+                    <p class="text-gray-300 mb-6">
+                        Produtor musical com mais de 10 anos de experiência na indústria, especializado em produção, mixagem e masterização. 
+                        Trabalhou com diversos artistas renomados e produziu trilhas sonoras para filmes, comerciais e jogos.
+                    </p>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-xl font-semibold mb-4">Linha do Tempo Profissional</h4>
+                        <div class="space-y-8 relative">
+                            <!-- Timeline Item 1 -->
+                            <div class="timeline-item relative pl-8">
+                                <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-indigo-500"></div>
+                                <div class="bg-gray-700 p-4 rounded-lg">
+                                    <h5 class="font-bold text-indigo-400">2020 - Presente</h5>
+                                    <p>DI-AUDIO - Estúdio próprio com equipamentos de última geração</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Timeline Item 2 -->
+                            <div class="timeline-item relative pl-8">
+                                <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-indigo-500"></div>
+                                <div class="bg-gray-700 p-4 rounded-lg">
+                                    <h5 class="font-bold text-indigo-400">2016 - 2020</h5>
+                                    <p>Produtor sênior na Major Records</p>
+                                </div>
+                            </div>
+                            
+                            <!-- Timeline Item 3 -->
+                            <div class="timeline-item relative pl-8">
+                                <div class="absolute left-0 top-0 w-4 h-4 rounded-full bg-indigo-500"></div>
+                                <div class="bg-gray-700 p-4 rounded-lg">
+                                    <h5 class="font-bold text-indigo-400">2012 - 2016</h5>
+                                    <p>Assistente de produção no Estúdio Wave</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-gray-700 px-4 py-2 rounded-lg flex items-center">
+                            <i class="fas fa-music text-indigo-400 mr-2"></i>
+                            <span>Produção Musical</span>
+                        </div>
+                        <div class="bg-gray-700 px-4 py-2 rounded-lg flex items-center">
+                            <i class="fas fa-sliders-h text-indigo-400 mr-2"></i>
+                            <span>Mixagem</span>
+                        </div>
+                        <div class="bg-gray-700 px-4 py-2 rounded-lg flex items-center">
+                            <i class="fas fa-volume-up text-indigo-400 mr-2"></i>
+                            <span>Masterização</span>
+                        </div>
+                        <div class="bg-gray-700 px-4 py-2 rounded-lg flex items-center">
+                            <i class="fas fa-film text-indigo-400 mr-2"></i>
+                            <span>Trilhas Sonoras</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Portfólio de <span class="text-indigo-500">Trabalhos</span></h2>
+                <div class="w-20 h-1 bg-indigo-500 mx-auto"></div>
+                <p class="max-w-2xl mx-auto mt-4 text-gray-300">
+                    Explore meus projetos mais recentes e alguns trabalhos marcantes da minha carreira.
+                </p>
+            </div>
+            
+            <!-- Portfolio Filter -->
+            <div class="flex justify-center mb-12">
+                <div class="inline-flex flex-wrap justify-center gap-2 bg-gray-800 p-2 rounded-lg">
+                    <button class="portfolio-filter px-4 py-2 rounded-md bg-indigo-600 text-white" data-filter="all">Todos</button>
+                    <button class="portfolio-filter px-4 py-2 rounded-md hover:bg-gray-700 transition" data-filter="music">Músicas</button>
+                    <button class="portfolio-filter px-4 py-2 rounded-md hover:bg-gray-700 transition" data-filter="film">Filmes</button>
+                    <button class="portfolio-filter px-4 py-2 rounded-md hover:bg-gray-700 transition" data-filter="ads">Comerciais</button>
+                    <button class="portfolio-filter px-4 py-2 rounded-md hover:bg-gray-700 transition" data-filter="games">Jogos</button>
+                </div>
+            </div>
+            
+            <!-- Portfolio Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-gray-800 animate-fade-in delay-100" data-category="music">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Projeto 1" 
+                         class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">Álbum "Eclipse"</h3>
+                        <p class="text-gray-300 mb-4 text-center px-4">Produção completa para banda indie</p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 flex items-center">
+                            <i class="fas fa-play mr-2"></i> Ouvir amostra
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Álbum "Eclipse"</h3>
+                        <p class="text-gray-400">2023 • Produção Musical</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-gray-800 animate-fade-in delay-200" data-category="film">
+                    <img src="https://images.unsplash.com/photo-1543536448-d209d2d3a075?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Projeto 2" 
+                         class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">"Caminhos Cruzados"</h3>
+                        <p class="text-gray-300 mb-4 text-center px-4">Trilha sonora original para longa-metragem</p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 flex items-center">
+                            <i class="fas fa-play mr-2"></i> Ouvir amostra
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">"Caminhos Cruzados"</h3>
+                        <p class="text-gray-400">2022 • Trilha Sonora</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-gray-800 animate-fade-in delay-300" data-category="ads">
+                    <img src="https://images.unsplash.com/photo-1498837167922-d004275ee422?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1398&q=80" 
+                         alt="Projeto 3" 
+                         class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">Campanha Verão 2022</h3>
+                        <p class="text-gray-300 mb-4 text-center px-4">Jingle e trilha para campanha publicitária</p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 flex items-center">
+                            <i class="fas fa-play mr-2"></i> Ouvir amostra
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Campanha Verão 2022</h3>
+                        <p class="text-gray-400">2022 • Comercial</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-gray-800" data-category="games">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Projeto 4" 
+                         class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">"Cyber Realm"</h3>
+                        <p class="text-gray-300 mb-4 text-center px-4">Trilha sonora e efeitos para jogo indie</p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 flex items-center">
+                            <i class="fas fa-play mr-2"></i> Ouvir amostra
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">"Cyber Realm"</h3>
+                        <p class="text-gray-400">2021 • Jogo Indie</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-gray-800" data-category="music">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Projeto 5" 
+                         class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">Single "Midnight"</h3>
+                        <p class="text-gray-300 mb-4 text-center px-4">Produção e mixagem para artista solo</p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 flex items-center">
+                            <i class="fas fa-play mr-2"></i> Ouvir amostra
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Single "Midnight"</h3>
+                        <p class="text-gray-400">2020 • Produção Musical</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item rounded-lg overflow-hidden shadow-lg bg-gray-800" data-category="film">
+                    <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Projeto 6" 
+                         class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay">
+                        <h3 class="text-xl font-bold mb-2">Documentário "Oceanos"</h3>
+                        <p class="text-gray-300 mb-4 text-center px-4">Design de som e mixagem</p>
+                        <a href="#" class="text-indigo-400 hover:text-indigo-300 flex items-center">
+                            <i class="fas fa-play mr-2"></i> Ouvir amostra
+                        </a>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold">Documentário "Oceanos"</h3>
+                        <p class="text-gray-400">2019 • Documentário</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border-2 border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white px-8 py-3 rounded-lg font-semibold transition duration-300">
+                    Ver Portfólio Completo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Galeria do <span class="text-indigo-500">Estúdio</span></h2>
+                <div class="w-20 h-1 bg-indigo-500 mx-auto"></div>
+                <p class="max-w-2xl mx-auto mt-4 text-gray-300">
+                    Um vislumbre do ambiente de trabalho e dos bastidores das produções.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Estúdio DI-AUDIO" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4 bg-gray-700">
+                        <h3 class="font-semibold">Estúdio DI-AUDIO</h3>
+                        <p class="text-sm text-gray-400">Sala de controle principal</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Sessão de gravação" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4 bg-gray-700">
+                        <h3 class="font-semibold">Sessão de Gravação</h3>
+                        <p class="text-sm text-gray-400">Artista em estúdio</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Equipamentos" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4 bg-gray-700">
+                        <h3 class="font-semibold">Equipamentos</h3>
+                        <p class="text-sm text-gray-400">Gear de alta qualidade</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Show ao vivo" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4 bg-gray-700">
+                        <h3 class="font-semibold">Show ao Vivo</h3>
+                        <p class="text-sm text-gray-400">Mixagem em evento</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Workshop" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4 bg-gray-700">
+                        <h3 class="font-semibold">Workshop</h3>
+                        <p class="text-sm text-gray-400">Ministrando aula</p>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1498837167922-d004275ee422?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1398&q=80" 
+                         alt="Prêmios" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-4 bg-gray-700">
+                        <h3 class="font-semibold">Reconhecimentos</h3>
+                        <p class="text-sm text-gray-400">Prêmios e certificações</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Depoimentos de <span class="text-indigo-500">Clientes</span></h2>
+                <div class="w-20 h-1 bg-indigo-500 mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente 1" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Ana Beatriz</h4>
+                            <p class="text-sm text-gray-400">Cantora</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">
+                        "Trabalhar com o Diego foi uma experiência incrível. Ele tem uma sensibilidade única para captar a essência do artista e transformar em som. O álbum que produzimos juntos superou todas as minhas expectativas."
+                    </p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Cliente 2" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Carlos Mendes</h4>
+                            <p class="text-sm text-gray-400">Diretor de Cinema</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">
+                        "A trilha sonora que Diego criou para meu filme foi fundamental para a narrativa. Ele entendeu perfeitamente a atmosfera que eu queria criar e trouxe uma profundidade emocional que enriqueceu muito o projeto."
+                    </p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
+                            <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="Cliente 3" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Ricardo Lopes</h4>
+                            <p class="text-sm text-gray-400">Produtor Executivo</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">
+                        "Diego é um profissional completo. Além do conhecimento técnico impecável, ele tem uma visão artística muito apurada. Já trabalhamos em vários projetos juntos e sempre supera as expectativas."
+                    </p>
+                    <div class="flex mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Entre em <span class="text-indigo-500">Contato</span></h2>
+                <div class="w-20 h-1 bg-indigo-500 mx-auto"></div>
+                <p class="max-w-2xl mx-auto mt-4 text-gray-300">
+                    Pronto para transformar sua visão musical em realidade? Vamos conversar sobre seu projeto.
+                </p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block mb-2 text-sm font-medium">Nome</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-2 text-sm font-medium">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block mb-2 text-sm font-medium">Assunto</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2 text-sm font-medium">Mensagem</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-semibold transition duration-300">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-700 p-8 rounded-lg shadow-lg h-full">
+                        <h3 class="text-xl font-bold mb-6">Informações de Contato</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="bg-indigo-500 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Estúdio DI-AUDIO</h4>
+                                    <p class="text-gray-300">Rua das Artes, 123<br>São Paulo - SP</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-indigo-500 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Email</h4>
+                                    <p class="text-gray-300">contato@di-audio.com.br</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-indigo-500 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Telefone</h4>
+                                    <p class="text-gray-300">(11) 98765-4321</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="bg-indigo-500 p-3 rounded-full mr-4">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Horário de Funcionamento</h4>
+                                    <p class="text-gray-300">Segunda a Sexta: 10h - 19h<br>Sábado: 10h - 14h</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="font-semibold mb-4">Redes Sociais</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-gray-600 hover:bg-indigo-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="bg-gray-600 hover:bg-indigo-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-gray-600 hover:bg-indigo-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="bg-gray-600 hover:bg-indigo-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-spotify"></i>
+                                </a>
+                                <a href="#" class="bg-gray-600 hover:bg-indigo-600 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-soundcloud"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-6 md:mb-0">
+                    <i class="fas fa-headphones text-indigo-500 text-2xl mr-2"></i>
+                    <a href="#" class="text-2xl font-bold text-white">
+                        <span class="text-indigo-500">DI</span>-AUDIO
+                    </a>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 mb-2">© 2023 DI-AUDIO. Todos os direitos reservados.</p>
+                    <p class="text-gray-500 text-sm">Desenvolvido com paixão pela música e tecnologia.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Portfolio Filter
+        const filterButtons = document.querySelectorAll('.portfolio-filter');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('bg-indigo-600', 'text-white'));
+                filterButtons.forEach(btn => btn.classList.add('hover:bg-gray-700'));
+                button.classList.add('bg-indigo-600', 'text-white');
+                button.classList.remove('hover:bg-gray-700');
+                
+                // Filter items
+                const filter = button.getAttribute('data-filter');
+                
+                portfolioItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+        
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.add('opacity-0', 'invisible');
+                backToTopButton.classList.remove('opacity-100', 'visible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Form Submission
+        const contactForm = document.getElementById('contact-form');
+        
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to a server
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            contactForm.reset();
+        });
+        
+        // Smooth Scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
